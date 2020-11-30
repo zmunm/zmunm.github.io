@@ -1,28 +1,49 @@
 ---
 layout: single
 categories: jekyll
-author_profile: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Welcome To Jekyll은 jekyll 가이드를 따라서 `jekyll new blog`를 하면 최초로 만들어주는 페이지다.
+기념 삼아서 이 페이지에 jekyll 블로그를 구성해 본 후기를 쓴다.
 
-Jekyll requires blog post files to be named according to the following format:
+기껏 다른 부분 다 영어로 해놓고 포스트는 한글로 쓰는 게 웃기지만 본문까지 영어로 쓸 체력이 안 남았다.
+간만에 루비를 뒤적이는 것도 지치고 웹 자체도 익숙하지 않아서..
 
-`YEAR-MONTH-DAY-title.MARKUP`
+# 왜 지킬을 골랐나?
+사실 꽤 예전에 jekyll 블로그를 시도했었는데 그때는 지금보다도 더 아무것도 모를 때라 어디서
+보고 jekyll template을 포크떠서 이리저리 조작해 봤었다.
+그러다 보니 디자인도 깔끔하게 안 나오고 피로는 두 배로 쌓여서 금방 드랍했다..
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+이번에 다시 블로그를 해보자고 생각하게 된 계기는 이거다.
 
-Jekyll also offers powerful support for code snippets:
+1. `gradlew dokkaJekyll`
+2. `gradlew dokkaJekyllMultiModule`
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+원래도 dokka가 출력 포맷으로 markdown은 지원해주고 있었지만, 멀티모듈에서 jekyll로 사용하려면
+이것저것 손이 많이 가서 깊게 건드리지 않고 있었는데 이번에 태스크가 생겼다.
+~~아직 알파버전이라 제대로 돌아가는지는 잘 모르겠지만..~~
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+미디움도 포스타입도 요즘 좋다는 노션도 있지만 역시 소스로 짜는 블로그는 각별한 맛이 있는 것 같다.
+블로그에 정보를 하나하나 쌓아가려면 자꾸 귀찮고 미루게 될 것 같아서
+아예 다른 소스 작업을 할 때 documenting 하듯이 겸사겸사 하도록..
+문서작업 알레르기가 있는 나한테는 이런 형태가 좋은 것 같다.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+# 어떻게 구성할까?
+처음에는 dokka 태스크나 한번 써볼까 시작했는데 지금 그리는 그림은 이렇다.
+
+1. Jekyll theme를 커스텀하게 하나 들고 있기
+2. Git hub 계정의 메인 블로그를 만들기
+3. Library Repository의 docs를 만들기
+4. 메인 블로그와 Library블로그를 같은 테마로 이어지는 것처럼 보이게 만들어주기
+
+이번에는 테마가지고 삽질 안 하려고 이것저것 기능이 많아 보이는 [Minimal mistakes](https://mmistakes.github.io/minimal-mistakes/)로 골랐다.
+사실 오래 살펴본 건 아니고 그냥 딱 삘이 와서 골랐는데 삶에서 중요한 선택이란 게 다 그런 거 같다.
+이름부터가 내 시간을 줄여줄 것만 같아서 믿음직스럽다.
+
+실제로 가장 골치 아플 것 같았던 검색이나 댓글 같은 기능이 아주 간단하게 해결됐다.
+GitHub 이슈와 댓글을 연동하는 부분이 효용성은 잘 모르겠고 그냥 내 마음에 쏙 들었다.
+댓글 누가 쓰지도 않을 텐데 그냥 땡기는 걸로 넣었다.
+
+
+이제 기본적인 환경은 구성됐으니 글감을 찾아봐야 한다.
+카테고리나 태깅 이런 건 글이 생기면 다시 알아보는 걸로..
