@@ -22,11 +22,34 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-sitemap
 
 remote_theme: zmunm/minimal-mistakes
 teaser: /assets/images/banner.jpg
 
-#breadcrumbs: true #beta
+permalink: /:categories/:title/
+
+breadcrumbs: true #beta
+
+include: ["_pages"]
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 comments:
   provider: "utterances"
@@ -39,12 +62,19 @@ search: true
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 
-
 defaults:
   - scope:
       path: ""
       type: posts
     values:
+      show_date: true
       author_profile: true
       share: true
       comments: true
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
