@@ -1,6 +1,10 @@
 ---
 layout: single
-categories: jekyll
+categories:
+  - ruby
+tags:
+  - ruby
+  - jekyll
 ---
 Welcome To Jekyll은 jekyll 가이드를 따라서 `jekyll new blog`를 하면 최초로 만들어주는 페이지다.
 기념 삼아서 이 페이지에 jekyll 블로그를 구성해 본 후기를 쓴다.
