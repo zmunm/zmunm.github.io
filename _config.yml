@@ -1,8 +1,8 @@
 title: Do something
 name: zmunm
 email: atheist2197@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Blog for me who forgets everything if I don't do anything
+description: >-
+  A blog for me who will forget everything
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zmunm.github.io"
 github_username: zmunm
@@ -24,7 +24,7 @@ plugins:
   - jekyll-include-cache
 
 remote_theme: zmunm/minimal-mistakes
-teaser: /assets/images/image.jpg
+teaser: /assets/images/banner.jpg
 
 #breadcrumbs: true #beta
 

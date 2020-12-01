@@ -4,4 +4,8 @@
 
 layout: home
 author_profile: true
+excerpt: A blog for me who will forget everything
+header:
+  overlay_filter: rgba(0, 255, 255, 0.3)
+  overlay_image: /assets/images/banner.jpg
 ---
