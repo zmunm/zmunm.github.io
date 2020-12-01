@@ -24,7 +24,6 @@ plugins:
   - jekyll-include-cache
 
 remote_theme: zmunm/minimal-mistakes
-minimal_mistakes_skin    : "mint"
 teaser: /assets/images/image.jpg
 
 #breadcrumbs: true #beta
