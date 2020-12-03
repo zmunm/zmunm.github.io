@@ -4,8 +4,8 @@
 
 layout: home
 author_profile: true
-title: 자기 전에 메모했나요?
-excerpt: 아무것도 안하면 다 까먹는 나를 위한 블로그
+title: 뭐라도 하자
+excerpt: 아무것도 안 하면 다 까먹는 나를 위한 블로그
 header:
   overlay_filter: rgba(0, 255, 255, 0.3)
   overlay_image: /assets/images/banner.jpg
