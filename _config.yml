@@ -5,6 +5,7 @@ description: >-
   A blog for me who will forget everything
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zmunm.github.io"
+locale: "ko-KR"
 github_username: zmunm
 repository: zmunm/zmunm.github.io
 
