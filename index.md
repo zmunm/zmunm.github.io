@@ -4,7 +4,7 @@
 
 layout: home
 author_profile: true
-excerpt: A blog for me who will forget everything
+excerpt: 아무것도 안하면 다 까먹는 나를 위한 블로그
 header:
   overlay_filter: rgba(0, 255, 255, 0.3)
   overlay_image: /assets/images/banner.jpg
