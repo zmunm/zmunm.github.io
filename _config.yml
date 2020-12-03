@@ -1,4 +1,4 @@
-title: Do something
+title: 모래알을 세는 사람
 name: zmunm
 email: atheist2197@gmail.com
 description: >-
@@ -12,7 +12,7 @@ repository: zmunm/zmunm.github.io
 author:
   name     : "zmunm"
   avatar   : "/assets/images/profile.jpg"
-  bio      : "바퀴를 재발명하는 사람"
+  bio      : "바퀴를 재발명하는 중"
   location : "Seoul, Korea"
   links:
     - label: "GitHub"
