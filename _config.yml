@@ -63,6 +63,7 @@ search: true
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 
+
 defaults:
   - scope:
       path: ""
