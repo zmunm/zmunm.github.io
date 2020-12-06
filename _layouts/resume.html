@@ -1,0 +1,76 @@
+---
+---
+{% assign resume = site.data.resume %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>이력서</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+	<link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+</head>
+
+<body>
+	<div class="page">
+		<section id="main">
+			<header id="title">
+				<h1>{{ resume.contact.name }}</h1>
+				<span class="subtitle">{{ resume.contact.job }}</span>
+
+				<ul>
+					{% for p in resume.profiles %}
+					<p><i class="{{p.icon}}"></i> {{ p.network }} - <a href="{{ p.url }}">{{ p.url }}</a></p>
+					{% endfor %}
+				</ul>
+			</header>
+			<section class="main-block">
+				<h2>
+          <i class="fa fa-suitcase"></i> 경력
+        </h2>
+				{% for e in resume.experiences %}
+				<section class="blocks">
+					<div class="date">
+						<span>{% unless e.end_date %}재직중{% else %}{{ e.end_date }}{% endunless %}</span><span>{{ e.start_date }}</span>
+					</div>
+					<div class="decorator">
+					</div>
+					<div class="details">
+						<header>
+							<h3>{{ e.company }} - {{ e.position }}</h3>
+						</header>
+						<div>
+							<ul>
+								{% for line in e.summary %}<li>{{ line }}</li>{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</section>
+				{% endfor %}
+			</section>
+
+			<section class="main-block">
+				<h2>
+          <i class="fa fa-graduation-cap"></i> 학력
+        </h2>
+				{% for d in resume.education %}
+				<section class="blocks">
+					<div class="date">
+						<span>{% unless d.end_date %}재학중{% else %}{{ d.end_date }}{% endunless %}</span><span>{{ d.start_date }}</span>
+					</div>
+					<div class="decorator">
+					</div>
+					<div class="details">
+						<header>
+							<h3>{{ d.school }}</h3>
+						</header>
+						<div>{{ d.major }}</div>
+					</div>
+				</section>
+				{% endfor %}
+			</section>
+		</section>
+		{% include scripts.html %}
+	</div>
+</body>
+
+</html>

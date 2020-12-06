@@ -1,0 +1,84 @@
+contact:
+  name: 김민규
+  email: atheist2197@gmail.com
+  job: 안드로이드 개발자
+  location:
+    city: 서울
+    country: 한국
+  introduce: 새로운 것을 좋아합니다.
+experiences:
+  - company: 에이블리 코퍼레이션
+    position: 안드로이드 개발자
+    start_date: 2018-02
+    summary:
+      - 에이블리 앱 개발
+      - Java -> Kotlin 변환
+      - gradle -> gradle.kts 변환
+      - 'buildSrc로 공통 소스 뽑아내기, lint, test 등은 custom gradle plugin으로 분리'
+      - 'Data, UI, 통계, 계층 등에 따라 멀티 모듈 분리'
+      - ben-manes version plugin 도입
+      - jacoco로 coverage verification 환경 구성
+      - 'detekt로 lint, autofix 환경 구성'
+      - git flow 도입
+      - Fastlane 도입해서 배포과정 규격화
+      - 'CircleCI 도입해서 lint, test, build, deploy 환경 구성'
+      - 'AAC 순차도입 (LiveData, ViewModel)'
+      - Repository 패턴 구현
+      - DataSource 패턴 구현
+      - 구글 스프레드 통계시트 파싱해서 kotlin 소스로 만들어주는 스크립트 작성
+      - '결제, 장바구니, 상품상세 등 주요 피쳐 개발'
+    website: 'https://a-bly.com/'
+    tags:
+      - Kotlin
+      - Android
+      - Databinding
+      - Rx
+      - Material UI
+      - Dagger2
+      - Crashlytics
+      - Fastlane
+      - CircleCI
+      - detekt
+      - jacoco
+      - mockk
+  - company: 초이스테크놀로지
+    position: 안드로이드 & 서버 개발자
+    start_date: 2016-09
+    end_date: 2018-12
+    summary:
+      - '헬스케어 BLE 장비 + 앱 연동, 서버 개발'
+      - 레거시 프레젠터 앱들 유지보수
+      - Thermosafer 개발
+      - 헬스케어 데이터 수집하는 서버 개발
+      - 수집한 데이터로 그래프 그리는 웹 개발
+      - BLE 장비 데이터를 Divice -> MQTT -> HTTPS로 중계하는 서버 + 클라이언트 개발
+      - 'MQTT Server, Client (kotlin)'
+      - docker file로 압축하기
+      - '윈도우, 리눅스 환경에서 쉘스크립트로 자동실행 환경 구성'
+    website: 'http://www.choistec.com/'
+    tags:
+      - Kotlin
+      - Android
+      - Rx
+      - BLE
+      - Dagger2
+      - Spring
+      - Spring boot
+      - MQTT
+      - EMQTT
+      - Shell Script
+profiles:
+  - network: Github
+    icon: fab fa-github
+    url: 'https://github.com/zmunm'
+  - network: Blog
+    icon: fas fa-envelope
+    url: 'https://zmunm.github.io/'
+education:
+  - school: 서울디지털대학교
+    start_date: 2019-06
+    major: 소프트웨어공학과
+  - school: 인천전자마이스터고등학교
+    start_date: 2014-03
+    end_date: 2017-03
+    major: 전자제어과
