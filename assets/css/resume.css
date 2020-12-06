@@ -54,6 +54,7 @@ select {
 }
 
 @page{
+  size: A4;
   size: letter portrait;
   margin: 0;
 }
@@ -81,8 +82,9 @@ select {
 
 @media print {
   .page{
-    margin: 0px auto;
-    padding: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
+    box-shadow: none !important;
   }
 }
 
@@ -96,7 +98,8 @@ body {
 }
 
 .page{
-  z-index: 8;
+  width: 21cm;
+  min-height: 29.7cm;
   box-shadow: 0px 0px 10px;
   background-color: white;
   margin: 30px auto;
