@@ -2,9 +2,9 @@
 title: 이력서 / 포트폴리오 Jekyll로 만들어보기
 layout: single
 categories:
-  - Jekyll
+  - jekyll
 tags:
-  - Jekyll
+  - jekyll
 ---
 구인 구직을 위한 플랫폼이 참 많다. 특히 IT 직군은 잡플래닛이나 잡코리아 말고도
 원티드, 로켓펀치, 리멤버 등 선택지가 너무나 다양하다.

@@ -1,7 +1,7 @@
 ---
 layout: single
 categories:
-  - ruby
+  - jekyll
 tags:
   - ruby
   - jekyll
