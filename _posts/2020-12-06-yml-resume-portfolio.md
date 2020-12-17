@@ -2,7 +2,7 @@
 title: 이력서 / 포트폴리오 Jekyll로 만들어보기
 layout: single
 categories:
-  - jekyll
+  - life
 tags:
   - jekyll
 ---
