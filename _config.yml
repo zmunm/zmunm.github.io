@@ -26,6 +26,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-archives
   - jekyll-sitemap
+  - jekyll-gist
 
 remote_theme: zmunm/minimal-mistakes
 teaser: /assets/images/banner.jpg
