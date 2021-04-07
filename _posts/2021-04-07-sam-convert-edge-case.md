@@ -16,20 +16,24 @@ tags:
 
 1. 익명 오브젝트에 불순물이 들어간 경우
 ```kotlin
-object: Runnable {
-  val number: Int = 2 // property가 들어가거나
-  fun foo() {} // 자신만의 함수가 있거나
-  init {} // init 블록이 있는 경우
-  override fun run() {}
+fun foo() {
+  object: Runnable {
+    val number: Int = 2 // property가 들어가거나
+    fun foo() {} // 자신만의 함수가 있거나
+    init {} // init 블록이 있는 경우
+    override fun run() {}
+  }
 }
 ```
 lambda가 가질 수 없는 걸 anonymous object 안에 선언해둔 경우에는 변환할 수 없다.
 
 2. this 레퍼런스를 사용하는 경우
 ```kotlin
-object: Runnable {
-  override fun run() {
-    this
+fun foo() {
+  object: Runnable {
+    override fun run() {
+      this
+    }
   }
 }
 ```
@@ -54,9 +58,11 @@ class Target {
 
 3. object가 들고 있는 함수를 호출하는 경우
 ```kotlin
-object: Runnable {
-  override fun run() {
-    hashCode()
+fun foo() {
+  object: Runnable {
+    override fun run() {
+      hashCode()
+    }
   }
 }
 ```
@@ -65,9 +71,11 @@ lambda는 class instance가 아니므로 자체적인 hashCode가 없다.
 
 
 ```kotlin
-object: Runnable {
-  override fun run() {
-    run()
+fun foo() {
+  object: Runnable {
+    override fun run() {
+      run()
+    }
   }
 }
 ```
@@ -82,11 +90,11 @@ object: Runnable {
 
 ```kotlin
 fun interface Sam {
-    fun foo()
+  fun foo()
 }
 fun newObject() = object : Sam {
-    override fun foo() {
-    }
+  override fun foo() {
+  }
 }
 fun lambda() = Sam {}
 val a = newObject() === newObject() // false
